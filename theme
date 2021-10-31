@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THEME </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+
+//STYLE STRATED//
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    background: var(--bg);
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+
+.navbar{
+    height: 70px;
+    width: 100%;
+    background: black;
+    color: white;
+
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+header{
+
+    padding: 1em;
+    background: var(--bg-head) ;
+    margin-bottom: 1em;
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+    text-align: center;
+    color: white;
+    clip-path: polygon(50% 0%, 100% 0%, 99.56% 80.95%, 49.7% 97.73%, 0px 79.18%, 0px 0px);;
+
+}
+
+.logo{
+    width: 300px;
+    height: 300px;
+
+}
+
+.dropdown{
+    position: absolute;
+    width: 500px;
+    opacity: 0;
+    z-index: 2;
+    border-top: 2px solid white;
+    background: black;
+
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 3rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
+
+    box-shadow: rgba(2,5,3,0.1) 0px 0.175em 0.5em;
+    transform: translate(-40%);
+
+    transition: opacity .15s ease-out;
+
+
+}
+
+.dropdown-added:focus-within .dropdown{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Theme */
+
+:root{
+    --black: #000000;
+    --white: #ffff;
+    --yellow: #FFCF00;
+    --orange: #EE6123;
+    --purple: #493657;
+    --lightgreen: #BEE5BF;
+    --crimson: #dc143c;
+    --grey: #1C1D21;
+
+}
+
+.dark{
+    --bg: var(--black);
+    --bg-nav: var(--black);
+    --text: var(--white);
+    --border-color: var(--white);
+    /* --crimson: #dc143c; */
+    --bg-head: var(--grey);
+    
+}
+
+.light{
+    --bg: var(--white);
+--bg-nav: var(--black);
+--text: var(--black);
+--border-color: var(--black);
+/* --crimson: #dc143c; */
+--bg-head: var(--crimson);
+}
+
+.solar{
+    --bg: var(--yellow);
+    --bg-nav: var(--orange);
+    --text: var(--black);
+    --border-color: var(--orange);
+   --crimson: #dc143c;
+   --bg-head: var(--orange);
+}
+
+/* LOGO HOVER */
+
+@keyframes color-rotate{
+    from{
+        filter: hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+    
+}
+
+.logo:hover{
+    animation: color-rotate 1s;
+    animation-iteration-count: infinite ;
+    animation-direction: alternate ;
+}
+
+main{
+    text-align: center;
+    line-height: 30px;
+}
+</style>   
+
+</head>
+<body class="light">
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">About</li>
+
+            
+            <!--  Dropdown Menu  --> 
+            <li class="nav-item dropdown-added">
+                <a href="#">Theme</a>
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a id="dark" href="#">Light</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a id="light" href="#">Dark</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a id="solar" href="#">Solarize</a>
+                    </li>
+                </ul>
+
+            </li>
+
+            <li class="nav-item">Login</li>
+        </ul>
+    </nav>
+
+   
+    <header>
+        <img src="coffee-cup.png" alt="coffee-logo" class="logo">
+        <h1>Front-End Web Development,<br>Coffeed Up</h1>
+        <p>HTML, CSS, JavaScript, NodeJS, MongoDB</p>
+    </header>
+
+    <main>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero id faucibus nisl tincidunt eget nullam non. Nisl vel pretium lectus quam id leo in vitae. Gravida dictum fusce ut placerat. Neque aliquam vestibulum morbi blandit cursus risus at ultrices mi. Cursus eget nunc scelerisque viverra. Turpis cursus in hac habitasse platea dictumst. Non enim praesent elementum facilisis leo vel fringilla. Pharetra vel turpis nunc eget. Diam donec adipiscing tristique risus. Sem viverra aliquet eget sit. Aliquam ut porttitor leo a diam sollicitudin tempor. Enim ut tellus elementum sagittis vitae et leo duis ut.
+
+Habitasse platea dictumst vestibulum rhoncus. Blandit volutpat maecenas volutpat blandit aliquam etiam. Sem nulla pharetra diam sit. Maecenas accumsan lacus vel facilisis volutpat est velit egestas. Duis ultricies lacus sed turpis tincidunt id. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Suspendisse potenti nullam ac tortor. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Eu turpis egestas pretium aenean pharetra magna ac placerat.
+    </main>
+
+
+//SCRIPT STRATED//
+<script>
+    // DOM ELEMENTS
+
+const darkButton = document.getElementById('dark');
+const lightButton = document.getElementById('light');
+const solarButton = document.getElementById('solar');
+const body = document.body;
+
+// Apply the cashed theme on reload
+const theme = localStorage.getItem('theme');
+const isSolar = localStorage.getItem('isSolar');
+
+if(theme){
+    body.classList.add(theme);
+    isSolar && body.classList.add('solar');
+}
+
+
+
+// Button Event Handlers
+
+darkButton.onclick = () =>{
+    body.classList.replace('dark','light');
+    localStorage.setItem('theme','dark');
+};
+
+lightButton.onclick = () =>{
+    body.classList.replace('light','dark');
+    localStorage.setItem('theme','light');
+
+};
+
+solarButton.onclick = () =>{
+    if(body.classList.contains('solar')){
+        body.classList.remove('solar');
+        solarButton.style.cssText = `
+        --bg-solar: var(--yellow);
+        `
+        solarButton.innerText = 'Solarize';
+        localStorage.removeItem('isSolar');
+    } else{
+        solarButton.style.cssText = `
+        --bg-solar: white;
+        `
+        body.classList.add('solar');
+        solarButton.innerText = 'Normalize';
+        localStorage.setItem('isSolar',true);
+    }
+
+};
+
+
+
+</script>
+
+</body>
+</html>
